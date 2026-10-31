@@ -1,10 +1,8 @@
 name: CI
 
 on:
-  pull_request:
-    branches: [dev, main]
-  push:
-    branches: [dev, main]
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 # CI only reads the tree; no job here writes to the repo. Pin the token to
 # read-only so a compromised step (or action) cannot push, tag or release.

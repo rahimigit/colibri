@@ -6,9 +6,7 @@ name: Deploy website
 # (A/AAAA to GitHub Pages IPs or CNAME to <org>.github.io), done.
 
 on:
-  push:
-    branches: [main]
-    paths: ['site/**', '.github/workflows/site.yml']
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
 
 permissions:

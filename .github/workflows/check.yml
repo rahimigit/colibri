@@ -4,10 +4,8 @@
 name: check
 
 on:
-  push:
-    branches: [main, dev]
-  pull_request:
-    branches: [main, dev]
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 permissions:
   contents: read
